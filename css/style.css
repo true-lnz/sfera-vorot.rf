@@ -2901,7 +2901,6 @@ button:active button:focus {
   line-height: 14px;
   color: #0087a4;
   padding-bottom: 2px;
-  margin-left: 20px
 }
 .email {
   position: relative;
@@ -2966,7 +2965,8 @@ button:active button:focus {
   font-weight: 500;
   text-align: left;
   transition: color .4s;
-  margin-top: 10px
+  margin-top: 10px;
+	cursor: pointer;
 }
 @media (hover:hover) {
   .phone__button:focus,
@@ -5818,21 +5818,20 @@ a.breadcrumbs__link {
 }
 .catalog__lead {
   font-size: 16px;
-  line-height: 20px;
+	line-height: 24px;
+	margin-bottom: .8rem;
   font-weight: 400;
   color: #272e45;
-  margin-bottom: 20px
 }
 @media (min-width:768px) {
   .catalog__lead {
     font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 30px
+    /* line-height: 22px; */
   }
 }
 @media (min-width:1280px) {
   .catalog__lead {
-    margin-bottom: 50px
+    /* margin-bottom: 50px */
   }
 }
 .catalog__list-wrapper {
@@ -6273,7 +6272,9 @@ a.breadcrumbs__link {
 	margin-top: 16px;
 	font-weight: 400;
 }
-
+.companies__item h4 {
+	text-align: center;
+}
 .companies__item::after {
   content: "";
   position: absolute;

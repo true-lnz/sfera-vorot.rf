@@ -1,205 +1,284 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Автоматические ворота в Уфе | Cфера Ворот</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-		<link rel="manifest" href="./favicon/site.webmanifest">
-		<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="msapplication-TileColor" content="#2b5797">
-		<meta name="theme-color" content="#ffffff">
 
-    <meta property="og:title" content='Автоматические ворота в Уфе | Cфера Ворот'>
-    <meta name='description' content='Скидка на автоматические ворота — 30%. Гарантия 2 года на гаражные автоматические ворота. Обслуживание, монтаж и ремонт.'>
-    <meta property='og:description' content='Скидка на автоматические ворота — 30%. Гарантия 2 года на гаражные автоматические ворота. Обслуживание, монтаж и ремонт.'>
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://сфера-ворот.рф/">
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:site_name" content="Сфера Ворот">
-    <meta property="og:image" content="./images/site-illustration.jpg">
-		
-		<!-- todo: изменить ссылки на ресурсы -->
-		<!-- todo: внизу тоже!!! и вверху тоже!!! -->
-		<link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./js/nice-select/nice-select.css">
-    <link rel="stylesheet" href="./js/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<title>Автоматические ворота в Уфе | Cфера Ворот</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
 
-  <body>
-    <div class="root">
-      <header class="header">
-        <div class="header__top">
-          <div class="container">
-						<button class="city header__city" type="button">Уфа</button>
-            <nav class="header__menu">
-							<ul  class="menu">
-								<li  class="menu__item first"><a class="menu__link" href="https://vorotarb.ru/contact/" >Контакты</a></li>
-								<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/dokumentatsiya/" >Виды работ</a></li>
-								<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/otzyvy/" >Отзывы</a></li>
-								<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/otzyvy/" >Галерея</a></li>
-							</ul>
-						</nav>            
-            <div class="socials socials--small header__socials"><span class="socials__title">Задать вопрос:</span><a class="social socials__item" href="https://www.avito.ru/brands/i355399972" target="_blank" rel="nofollow noopener"><img class="social__icon" src="./images/avito.png" width="16" height="16" alt="Начать чат в Авито"></a><a class="social socials__item" href="https://wa.me/79373326233" target="_blank" rel="nofollow noopener"><img class="social__icon" src="https://vorotarb.ru/assets/template/img/icons/socials/whatsapp.png" width="20" height="20" alt="Начать чат в WhatsApp"></a><a class="social socials__item" href="https://vk.com/sferavorot" target="_blank" rel="nofollow noopener"><img class="social__icon" src="https://vorotarb.ru/assets/template/img/icons/socials/vk.png" width="21" height="21" alt="Начать чат вконтакте"></a></div>
-          </div>
-        </div>
-        <div class="header__middle">
-          <div class="container"><a class="logo header__logo" href="https://vorotarb.ru/"><img class="logo__img" src="images/sfera-vorot.png" width="90" height="90" alt="Сфера ворот">
-              <div class="logo__text"><span class="logo__name">Сфера Ворот</span><span class="logo__description">Автоматические ворота</span></div>
-            </a>
-            <div class="phone header__phone">
-							<a class="phone__number" href="https://vorotarb.ru/tel:+73472999950">+7 (937) 332-62-33</a>
-							<button class="phone__button" type="button" data-modal-target="#feedback">Связаться с нами</button>
-						</div>
-            
-            <button class="button button--border" style="margin-right: 32px;" type="button" data-modal-target="#feedback">Связаться</button>
+	<meta property="og:title" content='Автоматические ворота в Уфе | Cфера Ворот'>
+	<meta name='description'
+		content='Скидка на автоматические ворота — 30%. Гарантия 2 года на гаражные автоматические ворота. Обслуживание, монтаж и ремонт.'>
+	<meta property='og:description'
+		content='Скидка на автоматические ворота — 30%. Гарантия 2 года на гаражные автоматические ворота. Обслуживание, монтаж и ремонт.'>
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://сфера-ворот.рф/">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:site_name" content="Сфера Ворот">
+	<meta property="og:image" content="./images/site-illustration.jpg">
 
-						<!-- todo: ПОСТАВИТЬ ЯКОРЬ НА ПЕРЕЧЕНЬ РАБОТ -->
-						<a class="button" href="https://vorotarb.doorhanstore.ru/" target="_blank" rel="nofollow noopener">Перечень работ</a>
-          </div>
-        </div>
-        <nav class="header__navigation">
-          <div class="container">
-						<ul class="menu menu--icon header__navigation-menu">
-							<li  class="menu__item first"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/avtomatika.png" width="39" height="30" alt="Иконка «Автоматика"><img src="images/avtomatika-hover.png" width="39" height="30" alt="Иконка «Автоматика» при наведении"></span>Автоматика</a></li>
-							<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/street-gate.png" width="38" height="32" alt="Иконка «Откатные ворота»"><img src="images/street-gate-hover.png" width="38" height="32" alt="Иконка «Откатные ворота» при наведении"></span>Откатные ворота</a></li>
-							<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="https://vorotarb.ru/assets/template/img/icons/catalog/avtomatika.png" width="39" height="31" alt="Иконка «Распашные ворота»"><img src="https://vorotarb.ru/assets/template/img/icons/catalog/avtomatika-hover.png" width="39" height="31" alt="Иконка «Распашные ворота» при наведении"></span>Распашные ворота</a></li>
-							<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/garage-gate.png" width="38" height="30" alt="Иконка «Секционные ворота»"><img src="images/garage-gate-hover.png" width="38" height="30" alt="Иконка «Секционные ворота» при наведении"></span>Секционные ворота</a></li>
-							<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/fencing-systems.png" width="29" height="29" alt="Иконка «Заборы»"><img src="images/fencing-systems-hover.png" width="29" height="29" alt="Иконка «Заборы» при наведении"></span>Заборы</a></li>
-							<li  class="menu__item last"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/roller-shutters.png" width="29" height="29" alt="Иконка «Калитки»"><img src="images/roller-shutters-hover.png" width="29" height="29" alt="Иконка «Калитки» при наведении"></span>Калитки</a></li>
-						</ul>          
+	<!-- todo: изменить ссылки на ресурсы -->
+	<!-- todo: внизу тоже!!! и вверху тоже!!! -->
+	<link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./js/nice-select/nice-select.css">
+	<link rel="stylesheet" href="./js/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="root">
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<button class="city header__city" type="button">Уфа</button>
+					<nav class="header__menu">
+						<ul class="menu">
+							<li class="menu__item first"><a class="menu__link" data-modal-target="#contact" type="button"
+									href="">Контакты</a></li>
+							<li class="menu__item"><a class="menu__link" href="#catalog">Виды работ</a></li>
+							<li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+							<li class="menu__item"><a class="menu__link" href="gallery.html">Галерея</a></li>
+						</ul>
+					</nav>
+					<div class="socials socials--small header__socials"><span class="socials__title">Задать вопрос:</span><a
+							class="social socials__item" href="https://www.avito.ru/brands/i355399972" target="_blank"
+							rel="nofollow noopener"><img class="social__icon" src="images/avito.png" width="16" height="16"
+								alt="Начать чат в Авито"></a><a class="social socials__item" href="https://wa.me/79373326233"
+							target="_blank" rel="nofollow noopener"><img class="social__icon" src="images/whatsapp.png" width="20"
+								height="20" alt="Начать чат в WhatsApp"></a><a class="social socials__item"
+							href="https://vk.com/sferavorot" target="_blank" rel="nofollow noopener"><img class="social__icon"
+								src="https://vorotarb.ru/assets/template/img/icons/socials/vk.png" width="21" height="21"
+								alt="Начать чат вконтакте"></a></div>
+				</div>
+			</div>
+			<div class="header__middle">
+				<div class="container"><a class="logo header__logo" href="/"><img class="logo__img" src="images/sfera-vorot.png"
+							width="90" height="90" alt="Сфера ворот">
+						<div class="logo__text"><span class="logo__name">Сфера Ворот</span><span class="logo__description">Ворота и
+								заборы в Уфе</span></div>
+					</a>
+					<div class="phone header__phone">
+						<a class="phone__number" href="tel:+73472999950">+7 (937) 332-62-33</a>
+						<a class="phone__button" data-modal-target="#contact" type="button">Связаться с нами</a>
 					</div>
-        </nav>
-        <div class="header__mobile">
-          <div class="container">
-            <button class="menu-button header__menu-button js-mobile-open" type="button" aria-label="Открыть меню"><span></span></button>
-            <a class="logo header__logo" href="https://vorotarb.ru/">
-              <img class="logo__img" src="https://vorotarb.ru/assets/template/img/logo.png" width="56" height="43" alt="Сфера Ворот">
-              <div class="logo__text"><span class="logo__name">Сфера Ворот</span></div>
-            </a>
-            <div class="phone header__phone">
-              <a class="phone__number" href="https://vorotarb.ru/tel:+73472999950">+7 (937) 332-62-33</a>
-            </div>
-          </div>
-        </div>
-      </header>
 
-      <div class="mobile">
-				<button class="mobile__close js-mobile-close" type="button"></button>
-				<div class="socials socials--small header__socials"><span class="socials__title">Задать вопрос:</span><a class="social socials__item" href="https://www.avito.ru/brands/i355399972" target="_blank" rel="nofollow noopener"><img class="social__icon" src="./images/avito.png" width="16" height="16" alt="Начать чат в Авито"></a><a class="social socials__item" href="https://wa.me/79373326233" target="_blank" rel="nofollow noopener"><img class="social__icon" src="https://vorotarb.ru/assets/template/img/icons/socials/whatsapp.png" width="20" height="20" alt="Начать чат в WhatsApp"></a><a class="social socials__item" href="https://vk.com/sferavorot" target="_blank" rel="nofollow noopener"><img class="social__icon" src="https://vorotarb.ru/assets/template/img/icons/socials/vk.png" width="21" height="21" alt="Начать чат вконтакте"></a></div>
-        <div class="mobile__information">
-          <div class="phone mobile__phone"><a class="phone__number" href="https://vorotarb.ru/tel:+73472999950">+7 (937) 332-62-33</a><button class="phone__button" type="button" data-modal-target="#feedback">Вам перезвонить?</button></div>
-        </div>
-        <nav class="mobile__navigation">
-					<ul class="menu menu--icon-column mobile__catalog">
-						<li  class="menu__item first"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/avtomatika.png" width="39" height="30" alt="Иконка «Автоматика"><img src="images/avtomatika-hover.png" width="39" height="30" alt="Иконка «Автоматика» при наведении"></span>Автоматика</a></li>
-						<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/street-gate.png" width="38" height="32" alt="Иконка «Откатные ворота»"><img src="images/street-gate-hover.png" width="38" height="32" alt="Иконка «Откатные ворота» при наведении"></span>Откатные ворота</a></li>
-						<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="https://vorotarb.ru/assets/template/img/icons/catalog/avtomatika.png" width="39" height="31" alt="Иконка «Распашные ворота»"><img src="https://vorotarb.ru/assets/template/img/icons/catalog/avtomatika-hover.png" width="39" height="31" alt="Иконка «Распашные ворота» при наведении"></span>Распашные ворота</a></li>
-						<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/garage-gate.png" width="38" height="30" alt="Иконка «Секционные ворота»"><img src="images/garage-gate-hover.png" width="38" height="30" alt="Иконка «Секционные ворота» при наведении"></span>Секционные ворота</a></li>
-						<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/fencing-systems.png" width="29" height="29" alt="Иконка «Заборы»"><img src="images/fencing-systems-hover.png" width="29" height="29" alt="Иконка «Заборы» при наведении"></span>Заборы</a></li>
-						<li  class="menu__item last"><a class="menu__link" href="https://vorotarb.ru/" ><span class="menu__img"><img src="images/roller-shutters.png" width="29" height="29" alt="Иконка «Калитки»"><img src="images/roller-shutters-hover.png" width="29" height="29" alt="Иконка «Калитки» при наведении"></span>Калитки</a></li>
-					</ul>   
-					<ul  class="menu menu--columns mobile__menu">
-						<li  class="menu__item first"><a class="menu__link" href="https://vorotarb.ru/contact/" >Контакты</a></li>
-						<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/dokumentatsiya/" >Виды работ</a></li>
-						<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/otzyvy/" >Отзывы</a></li>
+					<button class="button button--border" style="margin-right: 32px;" type="button"
+						data-modal-target="#contact">Связаться</button>
+
+					<a class="button" href="#catalog" rel="nofollow noopener">Перечень работ</a>
+				</div>
+			</div>
+			<nav class="header__navigation">
+				<div class="container">
+					<ul class="menu menu--icon header__navigation-menu">
+						<li class="menu__item"><a class="menu__link" href="gallery.html#catalog3"><span class="menu__img"><img
+										src="images/street-gate.png" width="38" height="32" alt="Иконка «Откатные ворота»"><img
+										src="images/street-gate-hover.png" width="38" height="32"
+										alt="Иконка «Откатные ворота» при наведении"></span>Откатные ворота</a></li>
+						<li class="menu__item last"><a class="menu__link" href="gallery.html#catalog5"><span class="menu__img"><img
+										src="images/roller-shutters.png" width="29" height="29" alt="Иконка «Секционные ворота»"><img
+										src="images/roller-shutters-hover.png" width="29" height="29"
+										alt="Иконка «Секционные ворота» при наведении"></span>Секционные ворота</a></li>
+						<li class="menu__item"><a class="menu__link" href="gallery.html#catalog2"><span class="menu__img"><img
+										src="images/industrial-systems.png" width="36" height="31" alt="Иконка «Распашные ворота»"><img
+										src="images/industrial-systems-hover.png" width="36" height="31"
+										alt="Иконка «Распашные ворота» при наведении"></span>Распашные ворота</a></li>
+						<li class="menu__item"><a class="menu__link" href="gallery.html#catalog4"><span class="menu__img"><img
+										src="images/fencing-systems.png" width="29" height="29" alt="Иконка «Заборы»"><img
+										src="images/fencing-systems-hover.png" width="29" height="29"
+										alt="Иконка «Заборы» при наведении"></span>Заборы и калитки</a></li>
+						<li class="menu__item"><a class="menu__link" href="gallery.html#catalog3"><span class="menu__img"><img
+										src="images/all.png" width="26" height="26" alt="Иконка «Наши работы»"><img
+										src="images/all.png" width="26" height="26"
+										alt="Иконка «Наши работы» при наведении"></span>Наши работы</a></li>
 					</ul>
-        </nav>
-      </div>
-      <div class="mobile-overlay js-mobile-close"></div>
-
-      <main>
-
-			</main>
-
-  		<footer class="footer">
-        <div class="footer__top">
-          <div class="container"><a class="logo footer__logo" href="https://vorotarb.ru//"><img class="logo__img" src="./images/sfera-vorot.png" loading="lazy" width="56" height="43" alt="Умные ворота">
-              <div class="logo__text"><span class="logo__name">Сфера<br>Ворот</span></div>
-            <div class="phone footer__phone"><a class="phone__number" href="https://vorotarb.ru/tel:+73472999950">+7 (937) 322-62-33</a><button class="phone__button" type="button" data-modal-target="#feedback">Связаться с нами</button></div>
-            <button class="button button--border footer__feedback" type="button" data-modal-target="#feedback">Контакты</button>
-          </div>
-        </div>
-        <div class="footer__middle">
-          <div class="container">
-            <ul class="menu menu--columns footer__catalog">
-              <li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/garazhnye_vorota/sekcionnye/">Секционные ворота</a></li>
-              <li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/ulichnye_vorota/otkatnye/">Откатные уличные ворота</a></li>
-              <li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/shlagbaumy/">Заборы</a></li>
-              <li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/ulichnye_vorota/raspashnye/">Распашные уличные ворота</a></li>
-              <li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/#">Калитки</a></li>
-              <li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/avtomatika_dlja_vorot/">Автоматика для ворот</a></li>
-            </ul>
-            <div class="footer__block footer__block--text">
-              <div class="footer__text">
-                <p>Все права защищены. Вся представленная на сайте информация носит информационный характер и&nbsp;не&nbsp;является публичной офертой.</p>
-                <p>Для более подробной информации<br>звоните по телефону +7 (347) 262-66-05</p>
-              </div>
-              <div class="socials footer__socials"><a class="social socials__item" href="https://www.avito.ru/brands/i355399972" target="_blank" rel="nofollow noopener"><img class="social__icon" src="images/avito.png" width="24" height="20" alt="Мы в телеграме"></a><a class="social socials__item" href="https://wa.me/79273300552" target="_blank" rel="nofollow noopener"><img class="social__icon" src="https://vorotarb.ru/assets/template/img/icons/socials/whatsapp.png" width="25" height="25" alt="Мы в WhatsApp"></a><a class="social socials__item" href="https://vk.com/vorota_rb" target="_blank" rel="nofollow noopener"><img class="social__icon" src="https://vorotarb.ru/assets/template/img/icons/socials/vk.png" width="26" height="26" alt="Мы вконтакте"></a></div>
-            </div>
-            <div class="footer__block footer__block--button"><button class="button button--large" type="button" data-modal-target="#feedback">Вызов замерщика</button><br>
-              <br>
-              <p>Бесплатный выезд в пределах 40&nbsp;км от г. Уфа</p>
-            </div>
-          </div>
-        </div>
-        <div class="footer__menu">
-          <div class="container">
-            <ul  class="menu menu--footer footer__menu-list">
-							<li  class="menu__item first"><a class="menu__link" href="https://vorotarb.ru/contact/" >Контакты</a></li>
-							<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/dokumentatsiya/" >Виды работ</a></li>
-							<li  class="menu__item"><a class="menu__link" href="https://vorotarb.ru/otzyvy/" >Отзывы</a></li>
-							<li  class="menu__item last"><a class="menu__link" href="https://vorotarb.ru/fotogalereya/" >Галерея</a></li>
-						</ul>          
+					</ul>
+				</div>
+			</nav>
+			<div class="header__mobile">
+				<div class="container">
+					<button class="menu-button header__menu-button js-mobile-open" type="button"
+						aria-label="Открыть меню"><span></span></button>
+					<a class="logo header__logo" href="/">
+						<img class="logo__img" src="./images/sfera-vorot.png" alt="Сфера Ворот">
+						<div class="logo__text"><span class="logo__name">Сфера Ворот</span></div>
+					</a>
+					<div class="phone header__phone">
+						<a class="phone__number" href="tel:+79373326233">+7 (937) 332-62-33</a>
 					</div>
-        </div>
-        <div class="footer__bottom">
-          <div class="container">
-            <p class="footer__copyright">&copy; ООО Сфера Ворот, 2024</p>
-            <p class="footer__developer">Разработка сайта <a href="https://ре-код.рф/contacts" target="_blank">reCode Team</a></p>
-          </div>
-        </div>
-  		</footer>
+				</div>
+			</div>
+		</header>
 
-  		<div class="modals">
-        <div class="modals__overlay js-modal-close">
-          <div class="modal" id="feedback">
-  					<div class="modal__header"><button class="modal__close js-modal-close" type="button"></button></div>
-  					<div class="modal__content">
-    					<h3 class="modal__title">Если Вы хотите получить более подробную информацию или выбрать подходящие ворота, оставьте заявку!</h3>
-    					<form class="form modal__form">
-      					<input type="hidden" name="page_name" value="Главная (1)">
-      					<input type="hidden" name="utm_info" value=''>
-      					<div class="form__group">
-        					<input class="workemail" type="text" name="workemail" value="Рабочий E-mail" required>
-        					<input name="user_phone" class="form__group-input form__group-input--large" type="text" placeholder="_ (___) ___ - __ - __" required>
-      					</div>
-      					<div class="form__bottom">
-        					<div class="form__consent">
-          					<input name="agreement" class="form__consent-input" type="checkbox" id="feedback_consent" required>
-          					<label class="form__consent-text" for="feedback_consent">Отправляя данные Вы даете согласие на их обработку в соответствии <a href="https://vorotarb.ru/policy/" target="_blank">с Политикой конфиденциальности</a> компании</label>
-        					</div>
-        					<button class="button button--huge form__button" type="submit">Оставить заявку</button>
-      					</div>
-    					</form>
-  					</div>
+		<div class="mobile">
+			<button class="mobile__close js-mobile-close" type="button"></button>
+			<div class="socials socials--small header__socials"><span class="socials__title">Задать вопрос:</span><a
+					class="social socials__item" href="https://www.avito.ru/brands/i355399972" target="_blank"
+					rel="nofollow noopener"><img class="social__icon" src="./images/avito.png" width="16" height="16"
+						alt="Начать чат в Авито"></a><a class="social socials__item" href="https://wa.me/79373326233"
+					target="_blank" rel="nofollow noopener"><img class="social__icon"
+						src="https://vorotarb.ru/assets/template/img/icons/socials/whatsapp.png" width="20" height="20"
+						alt="Начать чат в WhatsApp"></a><a class="social socials__item" href="https://vk.com/sferavorot"
+					target="_blank" rel="nofollow noopener"><img class="social__icon"
+						src="https://vorotarb.ru/assets/template/img/icons/socials/vk.png" width="21" height="21"
+						alt="Начать чат вконтакте"></a></div>
+			<div class="mobile__information">
+				<div class="phone mobile__phone"><a class="phone__number" href="tel:+79373326233">+7 (937) 332-62-33</a><button
+						class="phone__button" type="button" data-modal-target="#contact">Вам перезвонить?</button></div>
+			</div>
+			<nav class="mobile__navigation">
+				<ul class="menu menu--icon-column mobile__catalog">
+					<li class="menu__item"><a class="menu__link" href="gallery.html#catalog3"><span class="menu__img"><img
+									src="images/street-gate.png" width="38" height="32" alt="Иконка «Откатные ворота»"><img
+									src="images/street-gate-hover.png" width="38" height="32"
+									alt="Иконка «Откатные ворота» при наведении"></span>Откатные ворота</a></li>
+					<li class="menu__item last"><a class="menu__link" href="gallery.html#catalog5"><span class="menu__img"><img
+									src="images/roller-shutters.png" width="29" height="29" alt="Иконка «Секционные ворота»"><img
+									src="images/roller-shutters-hover.png" width="29" height="29"
+									alt="Иконка «Секционные ворота» при наведении"></span>Секционные ворота</a></li>
+					<li class="menu__item"><a class="menu__link" href="gallery.html#catalog2"><span class="menu__img"><img
+									src="images/industrial-systems.png" width="36" height="31" alt="Иконка «Распашные ворота»"><img
+									src="images/industrial-systems-hover.png" width="36" height="31"
+									alt="Иконка «Распашные ворота» при наведении"></span>Распашные ворота</a></li>
+					<li class="menu__item"><a class="menu__link" href="gallery.html#catalog4"><span class="menu__img"><img
+									src="images/fencing-systems.png" width="29" height="29" alt="Иконка «Заборы»"><img
+									src="images/fencing-systems-hover.png" width="29" height="29"
+									alt="Иконка «Заборы» при наведении"></span>Заборы и калитки</a></li>
+						<li class="menu__item"><a class="menu__link" href="gallery.html#catalog3"><span class="menu__img"><img
+										src="images/all.png" width="26" height="26" alt="Иконка «Наши работы»"><img
+										src="images/all.png" width="26" height="26"
+										alt="Иконка «Наши работы» при наведении"></span>Наши работы</a></li>
+				</ul>
+				<ul class="menu menu--columns mobile__menu">
+					<li class="menu__item first"><a class="menu__link" type="button" data-modal-target="#contact">Контакты</a>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="#catalog">Виды работ</a></li>
+					<li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="mobile-overlay js-mobile-close"></div>
+
+		<main>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container"><a class="logo footer__logo" href="https://vorotarb.ru//"><img class="logo__img"
+							src="./images/sfera-vorot.png" loading="lazy" width="56" height="43" alt="Умные ворота">
+						<div class="logo__text"><span class="logo__name">Сфера<br>Ворот</span></div>
+						<div class="phone footer__phone"><a class="phone__number" href="https://vorotarb.ru/tel:+73472999950">+7
+								(937) 322-62-33</a><button class="phone__button" type="button" data-modal-target="#feedback">Связаться с
+								нами</button></div>
+						<button class="button button--border footer__feedback" type="button"
+							data-modal-target="#feedback">Контакты</button>
+				</div>
+			</div>
+			<div class="footer__middle">
+				<div class="container">
+					<ul class="menu menu--columns footer__catalog">
+						<li class="menu__item"><a class="menu__link"
+								href="https://vorotarb.ru/garazhnye_vorota/sekcionnye/">Секционные ворота</a></li>
+						<li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/ulichnye_vorota/otkatnye/">Откатные
+								уличные ворота</a></li>
+						<li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/shlagbaumy/">Заборы</a></li>
+						<li class="menu__item"><a class="menu__link"
+								href="https://vorotarb.ru/ulichnye_vorota/raspashnye/">Распашные уличные ворота</a></li>
+						<li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/#">Калитки</a></li>
+						<li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/avtomatika_dlja_vorot/">Автоматика
+								для ворот</a></li>
+					</ul>
+					<div class="footer__block footer__block--text">
+						<div class="footer__text">
+							<p>Все права защищены. Вся представленная на сайте информация носит информационный характер
+								и&nbsp;не&nbsp;является публичной офертой.</p>
+							<p>Для более подробной информации<br>звоните по телефону +7 (347) 262-66-05</p>
+						</div>
+						<div class="socials footer__socials"><a class="social socials__item"
+								href="https://www.avito.ru/brands/i355399972" target="_blank" rel="nofollow noopener"><img
+									class="social__icon" src="images/avito.png" width="24" height="20" alt="Мы в телеграме"></a><a
+								class="social socials__item" href="https://wa.me/79273300552" target="_blank"
+								rel="nofollow noopener"><img class="social__icon"
+									src="https://vorotarb.ru/assets/template/img/icons/socials/whatsapp.png" width="25" height="25"
+									alt="Мы в WhatsApp"></a><a class="social socials__item" href="https://vk.com/vorota_rb"
+								target="_blank" rel="nofollow noopener"><img class="social__icon"
+									src="https://vorotarb.ru/assets/template/img/icons/socials/vk.png" width="26" height="26"
+									alt="Мы вконтакте"></a></div>
 					</div>
-        </div>
-  		</div>
-  	</div>
+					<div class="footer__block footer__block--button"><button class="button button--large" type="button"
+							data-modal-target="#feedback">Вызов замерщика</button><br>
+						<br>
+						<p>Бесплатный выезд в пределах 40&nbsp;км от г. Уфа</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__menu">
+				<div class="container">
+					<ul class="menu menu--footer footer__menu-list">
+						<li class="menu__item first"><a class="menu__link" href="https://vorotarb.ru/contact/">Контакты</a></li>
+						<li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/dokumentatsiya/">Виды работ</a></li>
+						<li class="menu__item"><a class="menu__link" href="https://vorotarb.ru/otzyvy/">Отзывы</a></li>
+						<li class="menu__item last"><a class="menu__link" href="https://vorotarb.ru/fotogalereya/">Галерея</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<p class="footer__copyright">&copy; ООО «Сфера Ворот», 2024</p>
+					<p class="footer__developer">Разработка сайта <a href="https://ре-код.рф/contacts" target="_blank">reCode
+							Agency</a></p>
+				</div>
+			</div>
+		</footer>
 
-		<!-- todo: Изменить ссылки на ресурсы -->
-    <script src="js/jquery/jquery-3.4.1.min.js"></script>
-    <script src="js/swiper/swiper-bundle.min.js"></script>
-    <script src="js/nice-select/jquery.nice-select.min.js"></script>
-    <script src="js/fancybox/jquery.fancybox.min.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/forms.js"></script>
-    <script src="js/index.js"></script>
-		<script src="js/gallery.js"></script>
-  </body>
+		<div class="modals">
+			<div class="modals__overlay js-modal-close">
+				<div class="modal" id="feedback">
+					<div class="modal__header"><button class="modal__close js-modal-close" type="button"></button></div>
+					<div class="modal__content">
+						<h3 class="modal__title">Если Вы хотите получить более подробную информацию или выбрать подходящие ворота,
+							оставьте заявку!</h3>
+						<form class="form modal__form">
+							<input type="hidden" name="page_name" value="Главная (1)">
+							<input type="hidden" name="utm_info" value=''>
+							<div class="form__group">
+								<input class="workemail" type="text" name="workemail" value="Рабочий E-mail" required>
+								<input name="user_phone" class="form__group-input form__group-input--large" type="text"
+									placeholder="_ (___) ___ - __ - __" required>
+							</div>
+							<div class="form__bottom">
+								<div class="form__consent">
+									<input name="agreement" class="form__consent-input" type="checkbox" id="feedback_consent" required>
+									<label class="form__consent-text" for="feedback_consent">Отправляя данные Вы даете согласие на их
+										обработку в соответствии <a href="https://vorotarb.ru/policy/" target="_blank">с Политикой
+											конфиденциальности</a> компании</label>
+								</div>
+								<button class="button button--huge form__button" type="submit">Оставить заявку</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- todo: Изменить ссылки на ресурсы -->
+	<script src="js/jquery/jquery-3.4.1.min.js"></script>
+	<script src="js/swiper/swiper-bundle.min.js"></script>
+	<script src="js/nice-select/jquery.nice-select.min.js"></script>
+	<script src="js/fancybox/jquery.fancybox.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/forms.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/gallery.js"></script>
+</body>
 
 </html>

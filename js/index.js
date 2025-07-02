@@ -3,13 +3,6 @@
 $(window).on('load', function () {
 	// Слайдер
 	const introSlider = new Swiper('.intro__slider', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
-		speed: 600,
-
 		navigation: {
 			nextEl: '.intro__slider .swiper-button--next',
 			prevEl: '.intro__slider .swiper-button--prev',
@@ -22,14 +15,13 @@ $(window).on('load', function () {
 		},
 	});
 
-
 	// Слайдер компаний
 	const companiesSlider = new Swiper('.companies__slider', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: true,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
 		speed: 600,
 		loop: true,
 		spaceBetween: 2,

@@ -22,16 +22,15 @@ $(window).on('load', function () {
 	// Красивый селект
 	$('select').niceSelect();
 
-	// Подключение fancybox
-	$('[data-fancybox="gallery"]').fancybox();
-
-
+/* 	// Подключение fancybox
+	$('[data-fancybox="gallery-0"]').fancybox();
+ */
 	// Нумерованный инпут
 	$('.js-number-down').on('click', function () {
 		let input = $(this).parent().find('input'),
-		minVal = input.attr('min'),
-		inputVal = parseFloat(input.val()),
-		inputNewVal;
+			minVal = input.attr('min'),
+			inputVal = parseFloat(input.val()),
+			inputNewVal;
 		if (inputVal <= minVal) {
 			inputNewVal = inputVal;
 		} else {
@@ -42,9 +41,9 @@ $(window).on('load', function () {
 
 	$('.js-number-up').on('click', function () {
 		let input = $(this).parent().find('input'),
-		inputVal = parseFloat(input.val()),
-		maxVal = input.attr('max'),
-		inputNewVal;
+			inputVal = parseFloat(input.val()),
+			maxVal = input.attr('max'),
+			inputNewVal;
 
 		if (inputVal >= maxVal) {
 			inputNewVal = inputVal;
@@ -97,7 +96,7 @@ $(window).on('load', function () {
 			$(`.js-accordion[data-index="0"]`).trigger('click');
 		}
 	}
-	$(window).resize(function() {
+	$(window).resize(function () {
 		if (isDesktop()) {
 			if ($('.content-open').length !== 1) {
 				$(`.js-accordion[data-index="0"]`).trigger('click');
@@ -109,31 +108,13 @@ $(window).on('load', function () {
 		return window.innerWidth > 991;
 	}
 
-	// $('.js-tabs').on('change', showTabs);
-
-	// function showTabs() {
-	// 	$(this).prop('checked');
-	// 	tabs = $(this).closest('.tabs');
-	// 	tabsLabel = $(this).parent();
-	// 	tabs.children('.tabs__contents').children('.tabs__content').addClass('hidden')
-	// 		.eq(tabsLabel.index()).removeClass('hidden');
-	// }
-
-
-	// // Аккордион
-	// $('.js-accordion').on("click", function () {
-	// 	$(this).toggleClass('js-accordion--open').parent().next().slideToggle();
-	// 	// $('.accordion').not(this).removeClass('accordion--open').parent().next().slideUp();
-	// });
-
-
 	// Слайдер выполненных работ
 	const completedWorksSlider = new Swiper('.completed-works__slider', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: true,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
 		speed: 600,
 		effect: 'fade',
 		fadeEffect: {
@@ -146,103 +127,6 @@ $(window).on('load', function () {
 			clickable: true,
 		},
 	});
-
-	// Слайдер отзывов
-	const reviewsSlider = new Swiper('.reviews-slider', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
-		speed: 600,
-		loop: true,
-		spaceBetween: 90,
-
-		navigation: {
-			nextEl: '.reviews-slider .swiper-button--next',
-			prevEl: '.reviews-slider .swiper-button--prev',
-		},
-
-		pagination: {
-			el: '.reviews-slider .swiper-pagination',
-			type: 'fraction',
-		},
-	});
-
-	// Слайдер преимуществ
-	const advantagesSlider = new Swiper('.advantages__slider', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
-		speed: 600,
-		watchSlidesProgress: true,
-		slidesPerView: 'auto',
-		spaceBetween: 5,
-
-		navigation: {
-			nextEl: '.advantages__slider .swiper-button--next',
-			prevEl: '.advantages__slider .swiper-button--prev',
-		},
-	});
-
-	// Слайдер товара
-	const productSlider = new Swiper('.product__slider', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
-		speed: 600,
-		effect: 'fade',
-		fadeEffect: {
-			crossFade: true
-		},
-
-		pagination: {
-			el: '.product .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-	});
-
-	// Слайдер товара
-	const productsSlider = new Swiper('.products__slider', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
-		speed: 600,
-		effect: 'fade',
-		fadeEffect: {
-			crossFade: true
-		},
-
-		pagination: {
-			el: '.products__slider .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-	});
-
-	// Слайдер обычный
-	const swiperSlider = new Swiper('.slider .swiper', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
-		speed: 600,
-		spaceBetween: 10,
-
-		navigation: {
-			nextEl: '.slider .slider-button--next',
-			prevEl: '.slider .slider-button--prev',
-		},
-	});
-
 
 	// Модальные окна
 	function openModal(selector) {
@@ -275,8 +159,6 @@ $(window).on('load', function () {
 			closeModal();
 		}
 	});
-
-
 
 	window.api = {
 		modals: {
